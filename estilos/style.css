@@ -15,86 +15,55 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
     height: 100vh;
+    width: 100vw;
     background-image: linear-gradient(to bottom, var(--cor2),var(--cor5) 60%);
-    position: relative;
-    
+     
 }
 
 main{
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px;
-    width: 50vw;
-    margin: auto;
-    display: inline-block;
-    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
 
+section#login{
+    background-color: white;
+    width: 60vw;
+    height: 60vh;
     position: absolute;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 2px 2px 9px black;
+
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-div#imagem{
-    border-radius: 20px;
-    background: url(../imagens/pexels-pixabay-163811.jpg) center center  no-repeat;
+section#login > div#imagem{
+
+    display: block;
+    background: url(../imagens/pexels-pixabay-163811.jpg) center center no-repeat;
     background-size: cover;
     height: 20vh;
-    margin-bottom: 20px;
 }
 
-div#formulario > h1{
-    margin-bottom: 20px;
-    font-family: var(--fonte-especial);
-}
-
-div#formulario > p{
-    margin-bottom: 20px;
+section#login > div#formulario{
     font-family: var(--fonte-especial);
     font-weight: 300;
-    text-align: left;
+    padding: 20px;
 }
 
-form input {
-    width: 50vw;
-    height: 25px;
-    border-radius: 10px;
-    
-}
-
-p.campos > input{
-    border: 1px solid var(--cor4);
-    background-color: var(--cor3);
-         
-}
-
-p#pemail, p#psenha{
-    background-color: var(--cor1);
-    margin-bottom: 5px;
-    border-radius: 10px;
-    text-align: left;
-    padding: 2px;
-    display: inline-block;
-    
-    
-     
-}
-
-p#botoes > input{
-    background-color: var(--cor1);
+section#login > div#formulario h1{
+    margin-bottom: 20px;
     text-align: center;
-    color: white;
-    font-family: var(--fonte-especial);
-    height: 50px;
-    border: 1px solid black;
-    margin-bottom: 5px;
 }
 
-p#botoes > input:hover{
-    background-color: red;
-    font-weight: bolder;
+section#login > div#formulario > p{
+    margin-bottom: 30px;
 }
