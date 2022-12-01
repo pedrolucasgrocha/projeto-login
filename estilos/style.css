@@ -33,7 +33,7 @@ main{
 
 section#login{
     background-color: white;
-    width: 300px;
+    width: 80vw;
     height: 600px;
     position: absolute;
     border-radius: 30px;
@@ -69,4 +69,47 @@ section#login > div#formulario h1{
 
 section#login > div#formulario > p{
     margin-bottom: 30px;
+}
+
+form > div.campo{
+    background-color: #88B8FA;
+    margin-bottom: 5px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 1px;
+    font-family: var(--fonte-padrao);
+}
+
+form > div.campo > input{
+    width: 92%;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: 1px solid lightgray;
+}
+
+form > div.campo > input[type= password]{
+    margin-bottom: 30px;
+}
+
+form > input[type= submit]{
+    
+    width: 100%;
+    height: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #fd77ca;
+    font-family: var(--fonte-especial);
+    border-radius: 500px;
+    color: white;
+    
+}
+
+form > input[type= submit]:hover{
+    background-color: #fc3db2;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+    border: 1px solid black;
 }

@@ -38,7 +38,8 @@
 /*------------------------COMPUTADORES E TVS----------------------------------*/
 @media  screen and (min-width: 992px){
     section#login{
-        width: 80vw;
+        width: 90vw;
+        max-width: 999px;
     }
 
     section#login > div#formulario{
