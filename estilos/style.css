@@ -72,20 +72,30 @@ section#login > div#formulario > p{
 }
 
 form > div.campo{
-    background-color: #88B8FA;
     margin-bottom: 5px;
     height: 40px;
     border-radius: 10px;
     padding: 1px;
     font-family: var(--fonte-padrao);
+    
+    
 }
 
-form > div.campo > input{
-    width: 92%;
-    height: 30px;
+div.campo > span{
+    color: black;
+    font-size: 2em;
+    width: 30px;
+    padding: 1px;
+    
+}
+
+div.campo > input{
+    width: calc(100% - 34px);
+    height: 100%;
     border-radius: 20px;
     padding-left: 10px;
     border: 1px solid lightgray;
+    transform: translateY(-10px);
 }
 
 form > div.campo > input[type= password]{
@@ -98,18 +108,29 @@ form > input[type= submit]{
     height: 50px;
     margin-top: 5px;
     cursor: pointer;
-    border: none;
-    background-color: #fd77ca;
+    border: 1px solid black;
+    background-color: #fc3db2;
     font-family: var(--fonte-especial);
     border-radius: 500px;
-    color: white;
-    
+    color: white;    
 }
 
 form > input[type= submit]:hover{
-    background-color: #fc3db2;
-    color: white;
+    background-color: #D8FAD4;
+    color: black;
     font-weight: bold;
     transition: .3s;
     border: 1px solid black;
+}
+
+form > input[name= esqueci]{
+    background-color: transparent;
+    border:none;
+    color: black;
+    text-decoration: underline;
+}
+
+form > input[name= esqueci]:hover{
+border: none;
+background-color: transparent;
 }
